@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
-<title>Install Tellio on Apple TV</title>
-<meta name="description" content="How to install Tellio on your Apple TV with Signulous or atvloadly: what you need, step by step, updating and troubleshooting.">
-<meta property="og:title" content="Install Tellio on Apple TV">
-<meta property="og:description" content="Step-by-step guide to installing Tellio on your Apple TV with Signulous or atvloadly.">
+<title>Install Tellio on Apple TV, iPhone and iPad</title>
+<meta name="description" content="How to install Tellio on Apple TV with Signulous or atvloadly, and on iPhone and iPad with SideStore, AltStore or Sideloadly: what you need, step by step, updating and troubleshooting.">
+<meta property="og:title" content="Install Tellio on Apple TV, iPhone and iPad">
+<meta property="og:description" content="Step-by-step guide to installing Tellio on Apple TV, iPhone and iPad.">
 <meta name="theme-color" content="#161c27">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -25,15 +25,33 @@
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html" aria-label="Tellio home" class="brand-link"><picture><source type="image/webp" srcset="logo-80.webp 80w, logo-120.webp 120w" sizes="40px"><img src="logo.png" alt="" width="40" height="40" decoding="async" class="brand-logo"></picture><picture><source type="image/webp" srcset="wordmark-135.webp 135w, wordmark-202.webp 202w" sizes="67px"><img src="wordmark.png" alt="Tellio" width="67" height="26" decoding="async" class="brand-wordmark"></picture></a>
       <div class="nav-links"><a href="index.html#features">Features</a><a href="index.html#screens">Screens</a><a href="index.html#how">How it works</a><a href="install.html" aria-current="page">Install</a><a href="index.html#limits">Limitations</a><a href="index.html#faq">FAQ</a></div>
-      <a href="https://github.com/MS2620/tellio/releases" class="btn btn-nav btn-primary">Get Tellio</a>
+      <a href="#choose" class="btn btn-nav btn-primary">Get Tellio</a>
     </nav>
     <div class="page-intro">
       <span class="eyebrow">INSTALL GUIDE</span>
-      <h1 class="page-title">Install Tellio on your Apple TV</h1>
-      <p class="page-lead">Tellio isn't on the App Store, so you install it yourself. There are two ways: Signulous, a paid service that does it from your phone or computer, or atvloadly, a free tool you run at home.</p>
+      <h1 class="page-title">Install Tellio</h1>
+      <p class="page-lead">Tellio isn't on the App Store, so you install it yourself. Pick your device below. Each has a free way and an easier way, and Tellio tells you when a newer build is out.</p>
     </div>
   </header>
   <main id="main" tabindex="-1" class="guide-main">
+    <section id="choose" class="grid-options">
+      <div class="card card--option">
+        <span class="eyebrow">TVOS 18 OR LATER</span>
+        <h2 class="card-title--lg">Apple TV</h2>
+        <p class="card-body card-body--relaxed">Signulous, a paid service that needs no computer, or atvloadly, a free tool on a Linux machine at home. Already have a sideloader that reads AltStore sources? Add Tellio's source.</p>
+        <a href="#apple-tv" class="option-jump">Apple TV steps<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a>
+      </div>
+      <div class="card card--option">
+        <span class="eyebrow">IOS &amp; IPADOS 26 OR LATER</span>
+        <h2 class="card-title--lg">iPhone &amp; iPad</h2>
+        <p class="card-body card-body--relaxed">SideStore or AltStore with Tellio's source, so updates arrive in the app, or Sideloadly from a Windows PC or Mac.</p>
+        <a href="#iphone" class="option-jump">iPhone &amp; iPad steps<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a>
+      </div>
+    </section>
+    <section id="apple-tv" class="guide-group guide-group--spaced">
+      <h2 class="panel-heading">Apple TV</h2>
+      <p class="card-body card-body--guide">Choose Signulous or atvloadly. If your sideloader reads AltStore sources, you can <a href="#tv-source">add Tellio's source</a> instead.</p>
+    </section>
     <section class="grid-options">
       <div class="card card--option">
         <span class="eyebrow">EASIEST · PAID</span>
@@ -49,7 +67,7 @@
       </div>
     </section>
     <section id="signulous" class="guide-group">
-      <h2 class="panel-heading">Option A: Signulous</h2>
+      <h2 class="panel-heading">Apple TV option A: Signulous</h2>
       <p class="card-body card-body--guide">Signulous isn't part of Tellio; it's a separate paid service.</p>
     </section>
     <ol class="step-stack">
@@ -71,7 +89,7 @@
       </li>
     </ol>
     <section id="atvloadly" class="guide-group">
-      <h2 class="panel-heading">Option B: atvloadly</h2>
+      <h2 class="panel-heading">Apple TV option B: atvloadly</h2>
       <p class="card-body card-body--guide">Free, but needs a Linux machine at home that stays on.</p>
     </section>
     <section class="card card--inverted">
@@ -80,7 +98,7 @@
         <li>An Apple TV on <strong>tvOS 18 or later</strong>, on your home network.</li>
         <li>A <strong>Linux</strong> machine on the same network that runs Docker: a Linux PC, a Raspberry Pi, or a NAS. atvloadly doesn't run on Windows or Mac.</li>
         <li>An <strong>Apple ID</strong>. Use a spare one, not your main account. A free Apple ID works.</li>
-        <li>Your IPTV login (Xtream Codes) and/or your Stremio addon links, for after installing.</li>
+        <li>Your IPTV login (Xtream Codes or an M3U playlist link) and/or your Stremio addon links, for after installing.</li>
       </ul>
     </section>
     <ol class="step-stack">
@@ -109,11 +127,82 @@
         <div class="step-content"><h3 class="card-title--lg">Open Tellio and set up</h3><p class="card-body card-body--guide">Open Tellio from the Apple TV home screen and follow the short setup: your IPTV account, your addons and your teams. Each step can be skipped.</p></div>
       </li>
     </ol>
+    <section id="tv-source" class="guide-group guide-group--spaced">
+      <h2 class="panel-heading">Or add Tellio's source</h2>
+      <p class="card-body card-body--guide">Sideloaders that read AltStore sources, such as atvloadly and FlareStore, can add this one. Tellio then installs from the list and each new build arrives as an update.</p>
+      <p class="card-body card-body--guide"><code class="inline-code">https://raw.githubusercontent.com/MS2620/tellio/altstore/altstore-tvos.json</code></p>
+      <p class="card-body card-body--guide">It lists the 10 newest builds and is updated after each one is published.</p>
+    </section>
+    <section id="iphone" class="guide-group guide-group--spaced">
+      <h2 class="panel-heading">iPhone &amp; iPad</h2>
+      <p class="card-body card-body--guide">Tellio for iPhone and iPad is a separate app with its own builds. It shares the Apple TV app's settings and backups, so you can bring your Apple TV setup across with one code.</p>
+    </section>
+    <section class="card card--inverted">
+      <h3 class="card-title--lg">What you need for iPhone and iPad</h3>
+      <ul class="req-list">
+        <li>An iPhone or iPad on <strong>iOS or iPadOS 26 or later</strong>.</li>
+        <li>An <strong>Apple ID</strong>. A spare one is best. A free Apple ID works, but apps need signing again every 7 days.</li>
+        <li>A <strong>Windows PC or Mac</strong> for the first setup of SideStore, AltStore or Sideloadly.</li>
+        <li>Your IPTV login (Xtream Codes or an M3U playlist link) and/or your Stremio addon links, or a backup code from your Apple TV.</li>
+      </ul>
+    </section>
+    <section id="sidestore" class="guide-group">
+      <h2 class="panel-heading">Option A: SideStore or AltStore</h2>
+      <p class="card-body card-body--guide">Free. Add Tellio's source once and every new build shows up as an update. SideStore refreshes apps on the phone itself; AltStore needs AltServer running on a computer on the same Wi-Fi.</p>
+    </section>
+    <ol class="step-stack">
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">1</span>
+        <div class="step-content"><h3 class="card-title--lg">Install SideStore or AltStore</h3><p class="card-body card-body--guide">Follow the setup on <a href="https://sidestore.io">sidestore.io</a> or <a href="https://altstore.io">altstore.io</a>. SideStore needs a computer once, to make a pairing file, and then uses the free LocalDevVPN app from the App Store to refresh apps.</p></div>
+      </li>
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">2</span>
+        <div class="step-content"><h3 class="card-title--lg">Turn on Developer Mode</h3><p class="card-body card-body--guide">On the iPhone or iPad, go to <strong>Settings › Privacy &amp; Security › Developer Mode</strong>, turn it on and restart. Sideloaded apps won't open without it.</p></div>
+      </li>
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">3</span>
+        <div class="step-content"><h3 class="card-title--lg">Add Tellio's source</h3><p class="card-body card-body--guide">In SideStore or AltStore, open <strong>Sources</strong>, add a source and paste this link:</p><p class="card-body card-body--guide"><code class="inline-code">https://raw.githubusercontent.com/MS2620/tellio-iOS/altstore/altstore.json</code></p></div>
+      </li>
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">4</span>
+        <div class="step-content"><h3 class="card-title--lg">Install Tellio</h3><p class="card-body card-body--guide">Open the source, select Tellio and install it. With SideStore, make sure LocalDevVPN is connected first.</p></div>
+      </li>
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">5</span>
+        <div class="step-content"><h3 class="card-title--lg">Open Tellio and set up</h3><p class="card-body card-body--guide">Follow the short setup, or go to <strong>Settings › Bring your Apple TV setup</strong> and enter the 8-character code from a backup on your Apple TV.</p></div>
+      </li>
+    </ol>
+    <section class="guide-group">
+      <h3 class="card-title--lg">Using LiveContainer?</h3>
+      <p class="card-body card-body--guide">Add the same source in LiveContainer and install Tellio from it. It's handy if your free Apple ID has already reached its limit of 3 apps.</p>
+    </section>
+    <section id="sideloadly" class="guide-group">
+      <h2 class="panel-heading">Option B: Sideloadly</h2>
+      <p class="card-body card-body--guide">Free, from a Windows PC or Mac with the iPhone or iPad connected by cable. Updates are installed the same way.</p>
+    </section>
+    <ol class="step-stack">
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">1</span>
+        <div class="step-content"><h3 class="card-title--lg">Download Tellio</h3><p class="card-body card-body--guide">Download <strong>Tellio.ipa</strong> from the latest build on the <a href="https://github.com/MS2620/tellio-iOS/releases">iPhone and iPad releases page</a>. It's a different file from the Apple TV one.</p></div>
+      </li>
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">2</span>
+        <div class="step-content"><h3 class="card-title--lg">Install it with Sideloadly</h3><p class="card-body card-body--guide">Install <a href="https://sideloadly.io">Sideloadly</a>, connect and unlock the iPhone or iPad, drop Tellio.ipa onto Sideloadly, enter your Apple ID and select Start.</p></div>
+      </li>
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">3</span>
+        <div class="step-content"><h3 class="card-title--lg">Trust it and turn on Developer Mode</h3><p class="card-body card-body--guide">On the device, go to <strong>Settings › General › VPN &amp; Device Management</strong> and trust your Apple ID. Then turn on <strong>Settings › Privacy &amp; Security › Developer Mode</strong> and restart.</p></div>
+      </li>
+      <li class="step-card">
+        <span class="step-badge step-badge--lg" aria-hidden="true">4</span>
+        <div class="step-content"><h3 class="card-title--lg">Open Tellio and set up</h3><p class="card-body card-body--guide">Follow the short setup, or bring your Apple TV setup across with its backup code.</p></div>
+      </li>
+    </ol>
     <section id="updating" class="guide-group guide-group--spaced">
       <h2 class="panel-heading">Updating</h2>
-      <p class="card-body card-body--guide">When a new build is out, Tellio shows a card on launch and Settings › About says so. Download the new Tellio.ipa and install it over the old one, in atvloadly or Signulous. Your settings are kept.</p>
+      <p class="card-body card-body--guide">When a new build is out, Tellio shows a card on launch and Settings › About says so. If you added Tellio's source, update it from there. Otherwise download the new Tellio.ipa for your device and install it over the old one, the same way you installed it. Your settings are kept.</p>
       <h2 class="panel-heading guide-subheading-gap">Good to know</h2>
-      <ul class="guide-list"><li>With atvloadly: it re-signs Tellio automatically, so it keeps working. Leave the Linux machine running.</li><li>A free Apple ID can have <strong>3</strong> sideloaded apps working at once, and register 10 a week.</li><li>After a tvOS update you may need to pair the Apple TV with atvloadly again.</li><li>To move to another Apple TV, use Settings › Backup &amp; restore if you run a backup server.</li></ul>
+      <ul class="guide-list"><li>With atvloadly: it re-signs Tellio automatically, so it keeps working. Leave the Linux machine running.</li><li>A free Apple ID can have <strong>3</strong> sideloaded apps working at once on each device.</li><li>After a tvOS update you may need to pair the Apple TV with atvloadly again.</li><li>To move to another Apple TV, or to your iPhone or iPad, use Settings › Backup &amp; restore if you run a backup server.</li><li>On iPhone and iPad with a free Apple ID, Tellio needs signing again every 7 days. SideStore and AltStore do it for you; with Sideloadly, install it again.</li><li>App IDs count against your Apple ID, not the device: a free Apple ID can register 10 a week across all your devices, and they free up after 7 days.</li></ul>
     </section>
     <section id="troubleshooting" class="guide-group guide-group--spaced">
       <h2 class="panel-heading">Troubleshooting</h2>
@@ -121,7 +210,10 @@
       <div class="card card--troubleshoot"><h3 class="card-title--troubleshoot">atvloadly can't find my Apple TV</h3><p class="card-body card-body--relaxed">Make sure both are on the same network and the Apple TV is on the Remote App and Devices screen. atvloadly's page has more tips.</p></div>
       <div class="card card--troubleshoot"><h3 class="card-title--troubleshoot">Apple ID sign-in fails</h3><p class="card-body card-body--relaxed">Approve the code on your trusted device quickly. Apple sometimes blocks new sign-ins; trying again later or using another spare Apple ID usually helps.</p></div>
       <div class="card card--troubleshoot"><h3 class="card-title--troubleshoot">The Top Shelf is blank</h3><p class="card-body card-body--relaxed">Delete Tellio and install it again; the Top Shelf part needs a clean install. With Signulous, make sure Install as duplicate app was left unticked.</p></div>
-      <div class="card card--troubleshoot"><h3 class="card-title--troubleshoot">Something else</h3><p class="card-body card-body--relaxed">Use Settings › About › Send feedback on the Apple TV, or <a href="https://github.com/MS2620/tellio/issues">open an issue on GitHub</a>.</p></div>
+      <div class="card card--troubleshoot"><h3 class="card-title--troubleshoot">SideStore can't install or refresh</h3><p class="card-body card-body--relaxed">Open LocalDevVPN and make sure it's connected, and that the device is on Wi-Fi. If it still fails, make a new pairing file with SideStore's guide.</p></div>
+      <div class="card card--troubleshoot"><h3 class="card-title--troubleshoot">Tellio won't open on iPhone or iPad</h3><p class="card-body card-body--relaxed">If it worked before, it has probably passed its 7 days: refresh it in SideStore or AltStore, or install it again with Sideloadly. Your settings are kept. On a new install, check Developer Mode is on and, with Sideloadly, that your Apple ID is trusted under VPN &amp; Device Management.</p></div>
+      <div class="card card--troubleshoot"><h3 class="card-title--troubleshoot">"Maximum number of app IDs"</h3><p class="card-body card-body--relaxed">A free Apple ID can register 10 app IDs a week. They free up 7 days after they were made; until then, use another spare Apple ID.</p></div>
+      <div class="card card--troubleshoot"><h3 class="card-title--troubleshoot">Something else</h3><p class="card-body card-body--relaxed">Use Settings › About › Send feedback in the app, or open an issue on GitHub for <a href="https://github.com/MS2620/tellio/issues">Apple TV</a> or <a href="https://github.com/MS2620/tellio-iOS/issues">iPhone and iPad</a>.</p></div>
     </section>
   </main>
   <footer class="site-footer">
@@ -129,9 +221,9 @@
       <div class="footer-meta">
         <span class="footer-brand">Tellio</span>
         <span>Film and TV information and artwork from TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</span>
-        <span>Tellio isn't affiliated with Apple, Stremio, TMDB, Trakt or ESPN. Apple TV and tvOS are trademarks of Apple Inc.</span>
+        <span>Tellio isn't affiliated with Apple, Stremio, TMDB, Trakt or ESPN. Apple TV, iPhone, iPad, tvOS and iPadOS are trademarks of Apple Inc.</span>
       </div>
-      <div class="footer-links"><a href="https://github.com/MS2620/tellio">GitHub</a><a href="https://github.com/MS2620/tellio/releases">Releases</a><a href="https://github.com/MS2620/tellio/issues">Report a problem</a></div>
+      <div class="footer-links"><a href="https://github.com/MS2620/tellio">Apple TV on GitHub</a><a href="https://github.com/MS2620/tellio-iOS">iPhone &amp; iPad on GitHub</a><a href="https://github.com/MS2620/tellio/releases">Releases</a><a href="https://github.com/MS2620/tellio/issues">Report a problem</a></div>
     </div>
   </footer>
 </div>
